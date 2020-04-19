@@ -1,0 +1,32 @@
+{% extends "index.html" %}
+
+{% block title %}{{ super() }} - Environment{% endblock %}
+
+{% block content %}
+    <style>
+    .list-group-item{
+        color: grey;
+        background-color: transparent;
+    }
+    </style>
+
+     <div class="container">
+        <h1>Environment</h1>
+        <p>The Glome invests in several organizations<br>
+        and startups whose mission is to make a positive <br>
+        enviromental imapct.</p>
+        <br>
+       <p>
+       Part of The Globe revenue goes to humanitarian work.
+       Our help goes to:</p>
+     <ul class="list-group">
+            <li class="list-group-item">Homelessness</li>
+            <li class="list-group-item">Animal Cruelty</li>
+            <li class="list-group-item">Mental Health</li>
+            <li class="list-group-item">Sexual Education in Developing Countries</li>
+            <li class="list-group-item">Reduction of Chemical Energy</li>
+        </ul>
+
+
+    </div>
+{% endblock %}

@@ -1,0 +1,69 @@
+{% extends "index.html" %}
+
+{% block title %}{{ super() }} - Projects{% endblock %}
+
+{% block content %}
+    <style>
+    table{
+
+    }
+    </style>
+
+     <div class="container">
+        <h1>Conferences</h1>
+         <br>
+         <h2>Calendar</h2>
+         <table class="table table-borderless table-transparent" style="color:grey;">
+            <thead>
+                <tr>
+                    <th>When:</th>
+                    <th>MAY</th>
+                    <th>JUNE</th>
+                    <th>JULY</th>
+                    <th>AUGUST</th>
+                </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <th scope="row">Dates:</th>
+                  <td>1st</td>
+                  <td>8th</td>
+                  <td>23th</td>
+                   <td>14th</td>
+               </tr>
+               <tr>
+                  <th scope="row">Where:</th>
+                  <td>Societe des Arts Technologiques</td>
+                  <td>Salle Wilfrid-Pelletier</td>
+                  <td>Palais des Congress de Montreal</td>
+                   <td>Le Cathcart</td>
+                </tr>
+            </tbody>
+        </table>
+         <p style="float:left;">Reserve your spot here:</p>
+         <form action="/conferences" method="post">
+             <table>
+                 <tr>
+                     <td><label>Name</label></td>
+                     <td><input type="text" name="name"/></td>
+                 </tr>
+                 <tr>
+                     <td><label>Email</label></td>
+                     <td><input type="email" name="email"/></td>
+                 </tr>
+                 <tr>
+                     <td><label>Date</label></td>
+                     <td><textarea name="date" rows="10" cols="40"></textarea></td>
+                 </tr>
+                 <tr>
+                     <td></td>
+                     <td>
+                         <button type="submit">Send</button>
+                         <button type="reset">Clear</button>
+                     </td>
+                 </tr>
+             </table>
+         </form>
+     <br>
+    </div>
+{% endblock %}

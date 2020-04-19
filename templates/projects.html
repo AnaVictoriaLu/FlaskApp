@@ -1,0 +1,39 @@
+{% extends "index.html" %}
+
+{% block title %}{{ super() }} - Projects{% endblock %}
+
+{% block content %}
+    <style>
+    .title:hover{
+        cursor: pointer;
+        transform: scale(1.5);
+    }
+    .title a{
+        color: white;
+        text-decoration: none;
+    }
+    </style>
+     <div class="container">
+        <h1>Projects</h1>
+         <table class="table table-borderless table-transparent" style="color:grey;">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th class="title"><a href="entertainment">Entertainment</a></th>
+                    <th class="title"><a href="conferences">Conferences</a></th>
+                    <th class="title"><a href="locations">Locations</a></th>
+                    <th class="title"><a href="environment">Environment</a></th>
+                </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <th scope="row"></th>
+                  <td>Events & Partners</td>
+                  <td>Come See Us Live</td>
+                  <td>Student Work Spaces</td>
+                   <td>Helping The Planet</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

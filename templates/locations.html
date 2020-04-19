@@ -1,0 +1,31 @@
+{% extends "index.html" %}
+
+{% block title %}{{ super() }} - Projects{% endblock %}
+
+{% block content %}
+    <style>
+    .list-group-item{
+        color: grey;
+    }
+    </style>
+
+     <div class="container">
+        <h1>Locations</h1>
+        <br>
+        <h2>Student Work Spaces </h2>
+        <p>The Glome invites you to come work at our <br>
+        innovative Student Work Spaces. Whether it is to study<br>
+        or to work on projects, we provide students with the essentials:
+        </p>
+        <ul class="list-group">
+            <li class="list-group-item">Plugs: Everywhere</li>
+            <li class="list-group-item">Drink: All Coffee Types, Bubble Tea, Smoothies </li>
+            <li class="list-group-item">Lunches: Cheap and Quick</li>
+            <li class="list-group-item">Wide tables and Cubicles</li>
+            <li class="list-group-item">Office Chairs</li>
+        </ul>
+         <br>
+       <p>Join us in one of our locations around Montreal:</p>
+       <p style="color:grey;">locations to come...</p>
+    </div>
+{% endblock %}

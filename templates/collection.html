@@ -1,0 +1,27 @@
+{% extends "index.html" %}
+
+{% block title %}{{ super() }} - Collection{% endblock %}
+
+{% block content %}
+    <style>
+    img{
+        width:300px;
+        margin:10px;
+    }
+    img:hover{
+        transform:scale(1.2) ;
+    }
+    </style>
+    <div class="container">
+        <h1>Collection</h1>
+        <br>
+        <p>The Glome Collection features the work <br>
+        of diffferent talented local and international artists.</p>
+        <img src="{{url_for('static', filename='images/IMG_20170924_204844.jpg')}}"/>
+        <img src="{{url_for('static', filename='images/IMG_20170928_111251.jpg')}}"/>
+        <img src="{{url_for('static', filename='images/IMG_20170928_144802.jpg')}}"/>
+        <img src="{{url_for('static', filename='images/IMG_20171013_142636.jpg')}}"/>
+        <img src="{{url_for('static', filename='images/IMG_20170919_181432.jpg')}}"/>
+        <img src="{{url_for('static', filename='images/IMG_20171013_152926.png')}}"/>
+    </div>
+{% endblock %}

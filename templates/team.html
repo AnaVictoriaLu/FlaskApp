@@ -1,0 +1,21 @@
+{% extends "index.html" %}
+
+{% block title %}{{ super() }} - Team{% endblock %}
+
+{% block content %}
+    <style>
+    img:hover{
+        transform:scale(1.2) ;
+    }
+    </style>
+    <div class="container">
+        <h1>Management Team</h1>
+        <a href=https://www.instagram.com/anavictorialucio/ target="_blank"><img src="{{ url_for('static', filename='images/me.png') }}" width="200px" height="200px"/></a>
+        <p>Ana Victoria Lucio <br>
+        Bachelor of Computer Science</p>
+        <a href=https://www.instagram.com/thisyouthiswild/ target="_blank"><img src="{{ url_for('static', filename='images/icon.png') }}" width="180px" height="180px"/></a>
+        <p>AJ Aujla <br>
+        Bachelor of Commerce</p>
+
+    </div>
+{% endblock %}
